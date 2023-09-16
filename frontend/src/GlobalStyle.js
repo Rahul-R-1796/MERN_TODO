@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-       background-color: #27AE60;
+       background-color: white;
     }
 
     input[type="text"]::-webkit-input-placeholder { // ! doesn't work
