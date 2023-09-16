@@ -20,7 +20,7 @@ const AppStyled = styled.div`
 
   .content-container {
     background-color: #fff;
-    width: 80%;
+    width: 100%;
     height: 80vh;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
