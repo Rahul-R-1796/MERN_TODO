@@ -19,7 +19,7 @@ const AppStyled = styled.div`
   justify-content: center;
 
   .content-container {
-    background-color: #89CFF0;
+    background-color: #fff;
     width: 80%;
     height: 80vh;
     border-top-left-radius: 20px;
