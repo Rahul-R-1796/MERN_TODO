@@ -4,7 +4,7 @@ import TodoItem from './TodoItem';
 import { styled } from 'styled-components';
 
 const TodoForm = () => {
-  const link = 'http://localhost:5000/api/v1/crud';
+  const link = 'https://mern-todo-api-7vr9.onrender.com/api/v1/crud';
   const [todos, setTodos] = useState([])
   const [todoName, setTodoName] = useState('')
   const [todoComment, setTodoComment] = useState('')
@@ -42,7 +42,7 @@ const TodoForm = () => {
     if (!editTodoData) { // ! only post if editTodoData is not provided
       await axios.post(link, todoData)
     } else {
-      await axios.patch(`http://localhost:5000/api/v1/crud/${editTodoData._id}`, todoData) // ! Update the data if we do have the editTodoData
+      await axios.patch(`https://mern-todo-api-7vr9.onrender.com/api/v1/crud/${editTodoData._id}`, todoData) // ! Update the data if we do have the editTodoData
     }
 
     setTodoName('');
