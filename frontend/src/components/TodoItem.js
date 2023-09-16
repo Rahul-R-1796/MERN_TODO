@@ -9,7 +9,7 @@ import axios from 'axios'
 const TodoItem = ({ todo, getTodos, editTodos}) => {
 
     const deleteTodo = async () => {
-        await axios.delete(`http://localhost:5000/api/v1/crud/${todo._id}`)
+        await axios.delete(`https://mern-todo-api-7vr9.onrender.com/api/v1/crud/${todo._id}`)
         getTodos(); // ! calling this function so we don't have to refresh the page.
     }
 
